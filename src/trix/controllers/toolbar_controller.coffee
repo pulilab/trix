@@ -123,7 +123,7 @@ class Trix.ToolbarController extends Trix.BasicObject
 
     if attributeName = getAttributeName(element)
       if input = getInputForDialog(element, dialogName)
-        input.value = @attributes[attributeName] ? ""
+        input.value = @attributes[attributeName] ? "http://"
         input.select()
 
     @delegate?.toolbarDidShowDialog(dialogName)
